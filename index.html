@@ -1,0 +1,120 @@
+<!-- No templates were used while creating this -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexMinified.css">
+    <!-- To get various logos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="batingo11.png">
+    <script src="indexMinified.js" async></script>
+    <title>Batingo11</title>
+</head>
+<body>
+    <!-- Whole layout is wrapped inside class='wrap' -->
+    <div class="wrap" id="wrapId">
+        <!-- Left part of the layout -->
+        <div class="left-side" id="left">
+            <!-- Buttons to see the layout on different devices -->
+            <button class="btn1" onclick="changeDesc('Mobile')">Mobile</button>
+            <button class="btn2" onclick="changeDesc('Desktop')">Desktop</button>
+            <h4>Customize Your Post</h4>
+            <p>These feature and text will only appear in your <br> Facebook post.</p>
+            <h5>Sample Text</h5>
+            <!-- Textarea from where we get the input -->
+            <textarea oninput="inputChange()" class="text"></textarea>
+        </div>
+        <!-- Right part of the layout -->
+        <div class="right-side" id="right">
+            <h4>Preview
+                <br>
+                <p id='deviceDesc'>Mobile News Feed</p>
+            </h4>
+            <!-- Button to see the layout in all devices -->
+            <button class="btn3" id="previewAll">Preview All</button>
+            <!-- Actual Layout card -->
+            <div class="card" id="cardId">
+                <!-- Header of the card -->
+                <div class="cardHead">
+                    <img src="batingo11.png" alt="">
+                    <div class="dots">&#65049</div>
+                    <div class="profileName">Batingo11</div>
+                    <div class="time">Today at 6:29 PM · <i class="fa fa-globe"></i></div>
+                </div>
+                <!-- Content/body of the card -->
+                <div class="content" id="contentId">
+                    <textarea id="area" readonly></textarea>
+                    <a href="#" id="more">more</a>
+                </div>
+                <!-- Footer of the card -->
+                <div class="footer">
+                    <hr>
+                    <div class="actions" id="actionsId">
+                        <div class="like"><a href="#" class="fa fa-thumbs-up"></a><a href="#"> Like</a></div>
+                        <div class="comment"><a href="#">&#128172; Comment</a></div>
+                        <div class="share"><a href="#" class="fa fa-share-alt"></a><a href="#"> Share</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popup is part which is hidden by default -->
+    <div class="popup">
+        <div class="popup-content">
+            <!-- To close the the popup -->
+            <div class="close">&#215;</div>
+            <!-- Layout is similar to above just added twice in popup one for desktop and another for mobile -->
+            <!-- desktop layout -->
+            <div class="desktop">
+                <p class="indicate">Desktop News Feed</p>
+                <div class="cardInPopUp" id="cardIdInPopUp">
+                    <div class="cardHeadInPopUp">
+                        <img src="batingo11.png" alt="" class="imageInPopUp">
+                        <div class="dotsInPopUp">&#65049</div>
+                        <div class="profileNameInPopUp">Batingo11</div>
+                        <div class="timeInPopUp">Today at 6:29 PM · <i class="fa fa-globe"></i></div>
+                    </div>
+                    <div id="contDesk">
+                        <textarea class="areaInPopUp" readonly></textarea>
+                        <a href="#" class="moreInPopUp">more</a>
+                    </div>
+                    <div class="footerInPopUp">
+                        <hr>
+                        <div class="actionsInPopUp" id="actionsIdInPopUp">
+                            <div class="likeInPopUp"><a href="#" class="fa fa-thumbs-up"></a><a href="#"> Like</a></div>
+                            <div class="commentInPopUp"><a href="#" >&#128172; Comment</a></div>
+                            <div class="shareInPopUp"><a href="#" class="fa fa-share-alt"></a><a href="#"> Share</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile layout -->
+            <div class="mobile">
+                <p class="indicate">Mobile News Feed</p>
+                <div class="cardInPopUp2" id="cardIdInPopUp2">
+                    <div class="cardHeadInPopUp">
+                        <img src="batingo11.png" alt="" class="imageInPopUp">
+                        <div class="dotsInPopUp">&#65049</div>
+                        <div class="profileNameInPopUp">Batingo11</div>
+                        <div class="timeInPopUp">Today at 6:29 PM · <i class="fa fa-globe"></i></div>
+                    </div>
+                    <div id="contMob">
+                        <textarea class="areaInPopUp" readonly></textarea>
+                        <a href="#" class="moreInPopUp">more</a>
+                    </div>
+                    <div class="footerInPopUp">
+                        <hr>
+                        <div class="actionsInPopUp" id="actionsIdInPopUp">
+                            <div><a href="#" class="fa fa-thumbs-up"></a><a href="#"> Like</a></div>
+                            <div><a href="#" >&#128172; Comment</a></div>
+                            <div><a href="#" class="fa fa-share-alt"></a><a href="#"> Share</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!-- I HOPE YOU LIKED IT -->
